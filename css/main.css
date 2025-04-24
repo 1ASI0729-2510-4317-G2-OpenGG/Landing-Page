@@ -358,4 +358,17 @@ img {
     .pricing-card.highlighted:hover {
         transform: translateY(-10px);
     }
-} 
+}
+.project-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text{
+    flex: 1;
+    padding: 20px;
+}
+.image{
+    max-width: 350px;
+    height: auto;
+}
