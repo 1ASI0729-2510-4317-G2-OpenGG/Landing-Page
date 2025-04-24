@@ -336,6 +336,59 @@ img {
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+.psymed-section {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0e1a36;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+  
+  .team-photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .team-photos figure {
+    margin: 0;
+    text-align: center;
+    width: 120px;
+  }
+  
+  .team-photos img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-photos img:hover {
+    transform: scale(1.05);
+  }
+  
+  .team-photos figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+  }
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -358,4 +411,48 @@ img {
     .pricing-card.highlighted:hover {
         transform: translateY(-10px);
     }
+    .team-photos {
+        gap: 16px;
+      }
+    
+      .team-photos figure {
+        width: 100px;
+      }
+    
+      .team-photos img {
+        height: 130px;
+      }
+    
+      .title {
+        font-size: 24px;
+      }
+    
+      .description {
+        font-size: 15px;
+      }
+      
+    
 } 
+@media (max-width: 480px) {
+    .team-photos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-photos figure {
+      width: 80%;
+      max-width: 200px;
+    }
+  
+    .team-photos img {
+      height: auto;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  }
