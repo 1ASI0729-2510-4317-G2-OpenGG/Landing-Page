@@ -8,6 +8,7 @@
 </head>
 <body>
 
+
 <!--header to call to accions  -->
 <header class="main-header">
     <div class="container header-container">
@@ -25,6 +26,7 @@
         <div class="header-actions">
             <a href="#" class="btn btn-outline">login</a>
             <a href="#" class="btn btn-primary">sign in</a>
+
         </div>
     </div>
 </header>
@@ -105,93 +107,104 @@
     </section>
 
     <!-- Sección Beneficios, Propuesta de Valor, Ventajas -->
-    <section id="beneficios" class="section">
+    <section id="benefit" class="section" aria-label="Benefits and Value Proposition">
         <div class="container">
-            <h2>Beneficios y Propuesta de Valor</h2>
+            <h2>Benefits & Value Proposition</h2>
             <div class="benefits-grid">
-                <!-- Beneficio 1 -->
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <!-- Icono del beneficio -->
-                    </div>
-                    <h3>Beneficio 1</h3>
-                    <p>Descripción del beneficio</p>
-                </div>
                 
-                <!-- Beneficio 2 -->
-                <div class="benefit-card">
+                <!-- Benefit 1 -->
+                <div class="benefit-card" aria-label="Benefit: Appointment Control">
                     <div class="benefit-icon">
-                        <!-- Icono del beneficio -->
+                        <img 
+                            src="https://cdn-icons-png.flaticon.com/512/3030/3030856.png" 
+                            alt="Appointment calendar icon" 
+                            aria-label="Appointment Control Icon"
+                        >
                     </div>
-                    <h3>Beneficio 2</h3>
-                    <p>Descripción del beneficio</p>
+                    <h3>Appointment Control</h3>
+                    <p>Easily manage, schedule, and keep track of patient appointments with an intuitive calendar interface.</p>
                 </div>
-                
-                <!-- Más beneficios aquí... -->
-            </div>
-            
-            <div class="advantages">
-                <h3>Ventajas</h3>
-                <ul class="advantages-list">
-                    <li>Ventaja 1</li>
-                    <li>Ventaja 2</li>
-                    <li>Ventaja 3</li>
-                    <!-- Más ventajas aquí... -->
-                </ul>
-            </div>
-        </div>
-    </section>
 
-    <!-- Sección Modelo de Negocio, Pricing -->
-    <section id="modelo" class="section">
-        <div class="container">
-            <h2>Modelo de Negocio</h2>
-            <div class="business-model">
-                <!-- Contenido del modelo de negocio -->
-            </div>
-            
-            <div class="pricing">
-                <h3>Pricing</h3>
-                <div class="pricing-plans">
-                    <!-- Plan 1 -->
-                    <div class="pricing-card">
-                        <h4>Plan Básico</h4>
-                        <div class="price">$XX</div>
-                        <ul class="features">
-                            <li>Característica 1</li>
-                            <li>Característica 2</li>
-                            <li>Característica 3</li>
-                        </ul>
-                        <a href="#" class="btn">Elegir plan</a>
+                <!-- Benefit 2 -->
+                <div class="benefit-card" aria-label="Benefit: Data Registration">
+                    <div class="benefit-icon">
+                        <img 
+                            src="https://www.svgrepo.com/show/3343/prescription.svg" 
+                            alt="Data registration icon" 
+                            aria-label="Data Registration Icon"
+                        >
                     </div>
-                    
-                    <!-- Plan 2 -->
-                    <div class="pricing-card highlighted">
-                        <h4>Plan Premium</h4>
-                        <div class="price">$XX</div>
-                        <ul class="features">
-                            <li>Característica 1</li>
-                            <li>Característica 2</li>
-                            <li>Característica 3</li>
-                            <li>Característica 4</li>
-                        </ul>
-                        <a href="#" class="btn">Elegir plan</a>
-                    </div>
-                    
-                    <!-- Plan 3 -->
-                    <div class="pricing-card">
-                        <h4>Plan Empresarial</h4>
-                        <div class="price">$XX</div>
-                        <ul class="features">
-                            <li>Característica 1</li>
-                            <li>Característica 2</li>
-                            <li>Característica 3</li>
-                            <li>Característica 4</li>
-                            <li>Característica 5</li>
-                        </ul>
-                        <a href="#" class="btn">Elegir plan</a>
-                    </div>
+                    <h3>Data Registration</h3>
+                    <p>Securely record and update patient data, from basic information to detailed clinical histories.</p>
                 </div>
+                
+                <!-- Benefit 3 -->
+                <div class="benefit-card" aria-label="Benefit: Medical Prescriptions">
+                    <div class="benefit-icon">
+                        <img 
+                            src="https://www.svgrepo.com/show/171117/medical-prescription.svg" 
+                            alt="Medical prescription icon" 
+                            aria-label="Medical Prescriptions Icon"
+                        >
+                    </div>
+                    <h3>Medical Prescriptions</h3>
+                    <p>Generate and store digital prescriptions that can be accessed by patients and professionals anytime.</p>
+                </div>
+                
+                <!-- Benefit 4 -->
+                <div class="benefit-card" aria-label="Benefit: Online Monitoring">
+                    <div class="benefit-icon">
+                        <img 
+                            src="https://www.svgrepo.com/show/126095/medical-heart-scan.svg" 
+                            alt="Online monitoring icon" 
+                            aria-label="Online Monitoring Icon"
+                        >
+                    </div>
+                    <h3>Online Monitoring</h3>
+                    <p>Track patient progress remotely using live metrics and updates shared through the platform.</p>
+                </div>
+                
+                <!-- Benefit 5 -->
+                <div class="benefit-card" aria-label="Benefit: Creation of Medical Profiles">
+                    <div class="benefit-icon">
+                        <img 
+                            src="https://www.svgrepo.com/show/429875/patient-profile-people.svg" 
+                            alt="Medical profile icon" 
+                            aria-label="Creation of Medical Profiles Icon"
+                        >
+                    </div>
+                    <h3>Creation of Medical Profiles</h3>
+                    <p>Build and maintain comprehensive medical profiles for each patient to improve diagnosis and treatment accuracy.</p>
+                </div>
+
+                <!-- Benefit 6 -->
+                <div class="benefit-card" aria-label="Benefit: Centralized Medical History">
+                    <div class="benefit-icon">
+                        <img 
+                            src="https://cdn-icons-png.flaticon.com/512/4320/4320337.png" 
+                            alt="Medical file icon" 
+                            aria-label="Medical history icon"
+                        >
+                    </div>
+                    <h3>Centralized Medical History</h3>
+                    <p>
+                        Have all patient history and progress in one place for accurate, informed care decisions.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="advantages" aria-label="Platform Advantages">
+                <h3>Advantages</h3>
+                <ul class="advantages-list">
+                    <li>Secure and confidential data handling</li>
+                    <li>User-friendly interface for professionals</li>
+                    <li>Designed specifically for psychiatric care environments</li>
+                    <li>Supports better clinical decision-making</li>
+                    <li>Real-time patient progress tracking</li>
+                    <li>Integrated appointment and medication scheduling</li>
+                    <li>Centralized medical records for quick access</li>
+                    <li>Easy-to-use mobile and web access for patients and professionals</li>
+                </ul>
             </div>
         </div>
     </section>
