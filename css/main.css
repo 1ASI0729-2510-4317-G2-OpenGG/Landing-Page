@@ -25,6 +25,7 @@ body {
     background-color: var(--light-color);
 }
 
+
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -81,70 +82,185 @@ img {
     padding: 5rem 0;
 }
 
-/* Header */
-.header {
-    background-color: white;
-    box-shadow: var(--box-shadow);
-    position: fixed;
+/* ===== HEADER ===== */
+.main-header {
+    background-color: #222; /* Color de fondo oscuro del header */
+    color: #fff; /* Color de texto del header */
+    padding: 10px 0;
+    position: sticky; /* Opcional: para que se quede fijo arriba */
     top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 100;
+    z-index: 1000;
 }
 
-.navbar {
+.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
 }
 
-.logo img {
-    height: 40px;
+.logo-area {
+    display: flex;
+    align-items: center;
 }
 
-.menu {
+.logo-small {
+    height: 40px; /* Ajusta el tamaño según tu logo */
+    margin-right: 10px;
+}
+.logo{
+    height: 200px;
+}
+.brand-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-nav ul {
     display: flex;
 }
 
-.menu li {
-    margin-left: 1.5rem;
+.main-nav ul li {
+    margin-left: 25px;
 }
 
-.menu a {
-    color: var(--dark-color);
-    font-weight: 500;
+.main-nav ul li a {
+    color: #ddd; /* Color de los enlaces de navegación */
+    font-size: 1em;
     transition: color 0.3s ease;
 }
 
-.menu a:hover {
-    color: var(--primary-color);
+.main-nav ul li a:hover {
+    color: #fff; /* Color al pasar el ratón */
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.header-actions .btn {
+    margin-left: 10px;
+    font-size: 0.9em;
+}
+
+.header-actions .btn-outline {
+    border: 1px solid #ccc;
+    color: #ccc;
+    background-color: transparent;
+}
+.header-actions .btn-outline:hover {
+    border-color: #fff;
+    color: #fff;
+}
+
+.header-actions .btn-primary {
+    border: 1px solid #87CEEB; /* Color del borde (azul claro) */
+    background-color: #87CEEB; /* Color de fondo (azul claro) */
+    color: #222; /* Color del texto */
+}
+.header-actions .btn-primary:hover {
+    background-color: #76bfde; /* Un poco más oscuro al pasar el ratón */
+    border-color: #76bfde;
 }
 
 /* Hero */
+
+button {
+    background: lightblue;
+    cursor: pointer;
+    border: none;
+    padding: 16px 32px;
+    color: azure;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    border-radius: 12px;
+    z-index: 1;
+    overflow: hidden;
+    margin-top: 1rem;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, skyblue, lightblue, skyblue, lightblue, skyblue, lightblue, skyblue, lightblue);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+button:hover::before {
+    opacity: 1;
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
+
 .hero {
-    height: 100vh;
+    background-color: #f0f0f0;
     display: flex;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+
+.hero-content, .hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
     align-items: center;
+}
+
+
+.hero-content {
+    text-align: left;
+    flex-direction: column;
     background-color: white;
-    margin-top: 73px; /* Altura del header */
+    padding: 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+
+.hero-content h1 {
+    font-size: 36px;
+    color: skyblue;
+    margin-bottom: 10px;
 }
 
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #777;
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
 }
 
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
 }
+
 
 /* Team */
 .team-grid {
@@ -421,6 +537,59 @@ img {
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+.psymed-section {
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0e1a36;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+  
+  .team-photos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .team-photos figure {
+    margin: 0;
+    text-align: center;
+    width: 120px;
+  }
+  
+  .team-photos img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .team-photos img:hover {
+    transform: scale(1.05);
+  }
+  
+  .team-photos figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+  }
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -443,4 +612,62 @@ img {
     .pricing-card.highlighted:hover {
         transform: translateY(-10px);
     }
+    .team-photos {
+        gap: 16px;
+      }
+    
+      .team-photos figure {
+        width: 100px;
+      }
+    
+      .team-photos img {
+        height: 130px;
+      }
+    
+      .title {
+        font-size: 24px;
+      }
+    
+      .description {
+        font-size: 15px;
+      }
+      
+    
 } 
+@media (max-width: 480px) {
+    .team-photos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-photos figure {
+      width: 80%;
+      max-width: 200px;
+    }
+  
+    .team-photos img {
+      height: auto;
+    }
+  
+    .title {
+      font-size: 22px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  }
+}
+.project-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text{
+    flex: 1;
+    padding: 20px;
+}
+.image{
+    max-width: 350px;
+    height: auto;
+}
