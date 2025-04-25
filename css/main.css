@@ -185,31 +185,116 @@ img {
 }
 
 .benefit-card {
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     padding: 2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #F8F9FA;
+}
+
+.benefit-card:hover {
+    background-color: #DDE2E5;
+    transform: translateY(-4px);
+}
+
+.benefit-card:nth-child(odd) {
+    background-color: #C2F2ED;
+}
+
+.benefit-card:nth-child(even) {
+    background-color: #69BFB7;
 }
 
 .benefit-icon {
-    width: 60px;
-    height: 60px;
-    background-color: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    background-color: #10BEAE;
     border-radius: 50%;
+    margin-bottom: 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon img {
+    width: 36px;
+    height: 36px;
+}
+
+.benefit-card h3 {
+    color: #091133;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0.75rem;
+}
+
+.benefit-card p {
+    color: #212429;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Advantages */
+.advantages {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.advantages h3 {
+    color: #091133;
     margin-bottom: 1rem;
 }
 
+.advantages-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
 .advantages-list li {
-    margin-bottom: 0.5rem;
-    position: relative;
-    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #F8F9FA;
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    color: #212429;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
 }
 
 .advantages-list li::before {
     content: "✓";
-    color: var(--success-color);
-    position: absolute;
-    left: 0;
+    background-color: #10BEAE;
+    color: white;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 0.25rem 0.6rem;
+    font-size: 1rem;
+    line-height: 1;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .advantages-list {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Pricing */
