@@ -7,36 +7,50 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="logo">
-                    <img src="assets/LogoUPC.png" alt="Logo">
-                </div>
-                <ul class="menu">
-                    <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#motivacion">Motivación</a></li>
-                    <li><a href="#proyecto">Proyecto</a></li>
-                    <li><a href="#beneficios">Beneficios</a></li>
-                    <li><a href="#modelo">Modelo de Negocio</a></li>
-                    <li><a href="#video">Demo</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Sección Introducción y Call To Actions -->
-    <section id="inicio" class="hero">
-        <div class="container">
-            <h1>Título Principal</h1>
-            <p>Subtítulo o descripción corta del proyecto</p>
-            <div class="cta-buttons">
-                <a href="#contacto" class="btn btn-primary">Llamado a la acción principal</a>
-                <a href="#proyecto" class="btn btn-secondary">Conocer más</a>
-            </div>
+<!--header to call to accions  -->
+<header class="main-header">
+    <div class="container header-container">
+        <div class="logo-area">
+            <img src="assets/psymed_logo.png" alt="PsyMed Logo" class="logo-small">
+            <a href="#" class="brand-name">PsyMed</a>
         </div>
-    </section>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <a href="#" class="btn btn-outline">login</a>
+            <a href="#" class="btn btn-primary">sign in</a>
+        </div>
+    </div>
+</header>
+
+<!--main to use the intro-->
+
+<div id="home-section" class="hero">
+    <div class="hero-content">
+        <img src="./assets/psymed_logo.png" alt="Logo de PsyMed" class="logo">
+        <h1>Welcome to PsyMed!</h1>
+        <p>The WebApp is a tool designed for mental health professionals that
+            facilitates appointment management, data recording, and tracking
+            of patients' clinical history. With an intuitive system,
+            it allows organizing all relevant information in one place,
+            enhancing efficiency and ensuring personalized and secure care.</p>
+        <div class="button-group">
+            <button data-section="contact-section">Contact</button>
+            <button data-section="about-section">About the Team</button>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="./assets/main_img.jpg" alt="Imagen de sección">
+    </div>
+</div>
+
+
 
     <!-- Sección Qué nos motiva a construir el proyecto -->
     <section id="motivacion" class="section">
