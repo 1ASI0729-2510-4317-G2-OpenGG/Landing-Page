@@ -109,7 +109,6 @@ img {
 }
 .logo{
     height: 200px;
-
 }
 .brand-name {
     font-size: 1.5em;
@@ -164,7 +163,6 @@ img {
     background-color: #76bfde; /* Un poco más oscuro al pasar el ratón */
     border-color: #76bfde;
 }
-
 
 /* Hero */
 
@@ -529,7 +527,6 @@ button:hover::before {
     .pricing-card.highlighted:hover {
         transform: translateY(-10px);
     }
-<<<<<<< HEAD
     .team-photos {
         gap: 16px;
       }
@@ -575,7 +572,6 @@ button:hover::before {
       font-size: 14px;
     }
   }
-=======
 }
 .project-content{
     display: flex;
@@ -590,4 +586,3 @@ button:hover::before {
     max-width: 350px;
     height: auto;
 }
->>>>>>> 2bc526028cd6f873c0261424960e18e1a06af480
